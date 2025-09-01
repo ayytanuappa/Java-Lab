@@ -1,0 +1,48 @@
+package Com.sample;
+
+public class BankAcc 
+{
+    private String AccHolder_name;
+    private double balance;
+
+    // Constructor
+    public BankAcc(String AccHolder_name, double balance) {
+        this.AccHolder_name = AccHolder_name;
+        this.balance = balance;
+    }
+
+    // Returning AccHolder name
+    public String getAccHolder_name() {
+        return AccHolder_name;
+    }
+
+    // Returning balance
+    public double getBalance() {
+        return balance;
+    }
+
+    // Deposit
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("New Balance: " + balance);
+        } else {
+            System.out.println("Invalid deposit");
+        }
+    }
+
+    // Main method
+    public static void main(String[] args) {
+        BankAcc account = new BankAcc("Tanusree", 15000);
+
+        System.out.println("Account Holder name: " + account.getAccHolder_name());
+        System.out.println("Initial Balance: " + account.getBalance());
+
+        account.deposit(5000);
+    }
+}
+
+Output:
+Account Holder name: Tanusree
+Initial Balance: 15000.0
+New Balance: 20000.0
