@@ -1,0 +1,39 @@
+package Com.Sample;
+
+class cse {
+    String section;
+    int classRoomNo;
+    double floorNo;
+
+    cse() {
+        System.out.println("Default Constructor");
+    }
+
+    cse(String s) {
+        section = s;
+        System.out.println("My section is " + section);
+    }
+
+    cse(int s1) {
+        classRoomNo = s1;
+        System.out.println("My class room no is " + classRoomNo);
+    }
+
+    cse(double s2) {
+        floorNo = s2;
+        System.out.println("My class floor no is " + floorNo);
+    }
+
+    public static void main(String[] args) {
+        cse obj = new cse();
+        cse section = new cse("CSE");
+        cse roomNo = new cse(206);
+        cse floorNo = new cse(2.0);
+    }
+}
+
+Output:
+Default Constructor
+My section is CSE
+My class room no is 206
+My class floor no is 2.0
