@@ -1,0 +1,56 @@
+package Com.sample;
+import java.lang.*;
+import java.util.Scanner;
+public class BestFriend {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the name of your best friend:");
+		String name = sc.nextLine();
+		System.out.println("Describe your best friend in one line:");
+		String bestLine = sc.nextLine();
+		System.out.println("Enter the age of your best friend:");
+		int age = sc.nextInt();
+		System.out.println("Enter the weight of your best friend:");
+		double weight = sc.nextDouble();
+		System.out.println("Enter the height of your best friend:");
+		float height = sc.nextFloat();
+		System.out.println("Is your best friend taller than you?");
+		boolean isTall = sc.nextBoolean();
+		System.out.println("---------------------------------------");
+		System.out.println("         About My Best Friend          ");
+		System.out.println("---------------------------------------");
+		System.out.println("My Best Friend is: "+name);
+		System.out.println("My Best Friend's age is: "+age);
+		System.out.println("My Best Friend's weight is: "+weight);
+		System.out.println("My Best Friend's height is: "+height);
+		System.out.println("Is My Best Friend taller?: "+isTall);
+		System.out.println("About My Best Friend: "+bestLine);
+		
+	}
+
+Output :
+Enter the name of your best friend:
+Hannah
+Describe your best friend in one line:
+She is Beautiful, Kind and Loving.
+Enter the age of your best friend:
+19
+Enter the weight of your best friend:
+50
+Enter the height of your best friend:
+5.3
+Is your best friend taller than you?
+False
+---------------------------------------
+         About My Best Friend          
+---------------------------------------
+My Best Friend is: Hannah
+My Best Friend's age is: 19
+My Best Friend's weight is: 50.0
+My Best Friend's height is: 5.3
+Is My Best Friend taller?: false
+About My Best Friend: She is Beautiful, Kind and Loving.
+
+}
