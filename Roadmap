@@ -1,0 +1,31 @@
+package Com.Sample;
+public class RoadMap {
+	public static void main(String[]args) {
+		String studentName="Tanu";
+		String[] roadMap= {
+				"1st Year:Master Program Fundamentals",
+				"2nd Year:Explore on AI",
+				"3rd year:Internship in Tech company",
+				"4th Year:Having a Good Innovative Projects in Hand",
+				"After Btech:Job in Tech Company/Plan For Higher studies(MS,Mtech,MBA)"
+		};
+		System.out.println("----------------");
+		System.out.println(" CAREER ROAD MAP ");
+		System.out.println("----------------");
+		System.out.println("Student Name : "+studentName);
+		
+		for(String step:roadMap) {
+			System.out.println("=>"+step);
+		}
+	}
+}
+OUTPUT :
+----------------
+ CAREER ROAD MAP 
+----------------
+Student Name : Tanu
+=>1st Year:Master Program Fundamentals
+=>2nd Year:Explore on AI
+=>3rd year:Internship in Tech company
+=>4th Year:Having a Good Innovative Projects in Hand
+=>After Btech:Job in Tech Company/Plan For Higher studies(MS,Mtech,MBA)
