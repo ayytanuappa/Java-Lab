@@ -1,0 +1,22 @@
+package Com.Sample;
+
+public class Conditional {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      int a=3;
+      int b=5;
+      if(a>b)
+        {
+    	  System.out.println("A is greater than B");
+        }
+      else if(a<b)
+      {
+    	  System.out.println(" A is less than B");
+      }
+	}
+
+}
+
+OUTPUT:
+ A is less than B
