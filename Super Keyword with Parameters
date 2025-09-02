@@ -1,0 +1,27 @@
+package Com.Sample;
+	class HOD{
+		HOD(){
+			System.out.println("Hod permssion granted");
+		}
+	}
+	class Teacher extends HOD{
+		Teacher(int x){
+			super();
+			System.out.println("Teacher gave "+ x +" programs");
+		}
+	}
+	class student extends Teacher{
+		student(int x){
+			super(x);
+			System.out.println("Student executed " + x +" programs !");
+		}
+	}
+ public class ParameterSuper {
+		public static void main(String[] args) {
+			student ch=new student(3);
+		}
+	}
+OUTPUT:
+Hod permssion granted
+Teacher gave 3 programs
+Student executed 3 programs !
